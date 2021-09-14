@@ -17,12 +17,12 @@
             {% for quest in q %}
             <tr>
                 <td class="cntnt">{{quest.content}}</td>
-                <td>{{quest.date_created.date()}}</td>
-                <td>{{quest.ansA}}</td>
-                <td>{{quest.ansB}}</td>
-                <td>{{quest.ansC}}</td>
-                <td>{{quest.ansD}}</td>
-                <td>{{quest.cor}}</td>
+                <!--<td>{{quest.date_created.date()}}</td>-->
+                <td class="A">{{quest.ansA}}</td>
+                <td class="B">{{quest.ansB}}</td>
+                <td class="C">{{quest.ansC}}</td>
+                <td class="D">{{quest.ansD}}</td>
+                <!--<td>{{quest.cor}}</td>-->
             </tr>
             {% endfor %}
         </table>

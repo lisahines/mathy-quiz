@@ -9,6 +9,18 @@ body {
 .cntnt {
     background-color: gold;
 }
+.A {
+    background-color:steelblue;
+}
+.B {
+    background-color: #B284be;
+}
+.C {
+    background-color: #4f7942;
+}
+.D {
+    background-color: #ffb701;
+}
 
 img {
     width:100%;
