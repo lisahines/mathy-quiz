@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1>Math Quiz App!</h1>
+    <div id="options">
+        <a href="/add/">Add a question</a>
+        <a href="/quiz/">Take a quiz</a>
+
+    </div>
+    <div id="questions">
+        <table>
+            {% for quest in q %}
+            <tr>
+                <td>{{quest.content}}</td>
+                <td>{{quest.date_created.date()}}</td>
+                <td>{{quest.ansA}}</td>
+                <td>{{quest.ansB}}</td>
+                <td>{{quest.ansC}}</td>
+                <td>{{quest.ansD}}</td>
+                <td>{{quest.cor}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</div>
+{% endblock %}

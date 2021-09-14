@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+
+<div id="question">
+<form action='/add/' method="POST">
+    <div class="ques-elem">
+    <label>Type your question:</label>
+    <input type="text" name="content" id="content">
+    <label>(Optional)Image URL?</label>
+    <input type="text" name="url_img" id="url_img"> 
+    </div>
+    <div class="ques-elem">
+    <label>Answer 1</label>
+    <input type="text" name="ans1" id="ans1">
+    </div>
+    <div class="ques-elem">
+    <label>Answer 2</label>
+    <input type="text" name="ans2" id="ans2">
+    </div>
+    <div class="ques-elem">
+    <label>Answer 3</label>
+    <input type="text" name="ans3" id="ans3">
+    </div>
+    <div class="ques-elem">
+    <label>Answer 4</label>
+    <input type="text" name="ans4" id="ans4">
+    </div>
+    <div class="ques-elem">
+    <label>Which is correct?</label>
+    <input type="number" name="cor" id="cor" max=4 min=1>
+    </div>
+    <input type="submit" value="Add Question">
+</form>
+</div>
+{% endblock %}

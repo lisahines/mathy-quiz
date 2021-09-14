@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <div class="alert alert-success" role="alert">
+        <h4>{{res}}</h4>
+    </div>
+    <h1>Can you Do It?</h1>
+    <div id="quiz">
+        
+        <h2>{{q.content}}</h2>
+        <div class="cont"><img src="{{q.img_url}}">
+        </div>
+        <form action='/quiz/' method="POST">
+        <button name="ans" value="A">{{q.ansA}}</button>
+        <button name="ans" value="B">{{q.ansB}}</button>
+        <button name="ans" value="C">{{q.ansC}}</button>
+        <button name="ans" value="D">{{q.ansD}}</button>
+        <p>Previous Results:</p>
+        <p>Correct: {{q.prev_correct}}</p>
+        <p>Incorrect: {{q.prev_incorrect}}</p>
+        <input type="hidden" name="id" value="{{q.id}}">
+        </form>
+                
+    </div>
+</div>
+{% endblock %}
