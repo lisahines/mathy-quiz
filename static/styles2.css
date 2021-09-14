@@ -6,6 +6,10 @@ body {
     max-height: 400px;
 }
 
+.cntnt {
+    background-color: gold;
+}
+
 img {
     width:100%;
     height:100%
